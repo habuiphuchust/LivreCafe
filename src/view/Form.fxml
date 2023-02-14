@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerForm">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="194.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="194.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="292.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="124.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="tftenkh" promptText="không được để trống" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <TextField fx:id="tfdiachi" promptText="ghi rõ địa chỉ" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="tfsdt" promptText="không được để trống" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="tfemail" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <TextField fx:id="tfsl" text="1" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Label text="Họ và tên:" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Địa chỉ:" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="Số điện thoại:" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label text="Email:" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label text="Số lượng:" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Button mnemonicParsing="false" onAction="#clickOk" text="Gửi" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <Label text="Tên sản phẩm:" GridPane.columnIndex="1" />
+      <Label fx:id="lbtensp" GridPane.columnIndex="2" />
+      <Label fx:id="lbtenkh" textFill="#e10202" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lbdiachi" textFill="#ee0c0c" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="lbsdt" textFill="#eb0808" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lbemail" textFill="#e10909" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <padding>
+            <Insets top="50.0" />
+         </padding>
+      </Label>
+      <Label fx:id="lbsl" textFill="#e10606" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

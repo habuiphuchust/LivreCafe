@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerEditBook">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="194.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="326.0" minWidth="10.0" prefWidth="194.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="292.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="350.0" minWidth="10.0" prefWidth="124.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TextField fx:id="ttheloai" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <TextField fx:id="ttinhtrang" text="true" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+      <TextField fx:id="tmotathem" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+      <Label text="Thể loại" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label text="Còn hàng?" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label text="Mô tả thêm" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label text="Ảnh bìa" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Label prefHeight="21.0" prefWidth="114.0" text="Năm xuất bản" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="tnamxuatban" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <TextField fx:id="tnhaxuatban" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <TextField fx:id="ttacgia" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <TextField fx:id="tten" GridPane.columnIndex="2" />
+      <TextField fx:id="tgia" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+      <Label text="Tên sách" GridPane.columnIndex="1" />
+      <Label text="Giá" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Tác giả" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="Nhà xuất bản " GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <ImageView fx:id="imageview" fitHeight="140.0" fitWidth="248.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+      <Button mnemonicParsing="false" onAction="#ChooseImage" text="Lấy ảnh" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin></Button>
+      <Button mnemonicParsing="false" onAction="#clickOk" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <Button alignment="CENTER_RIGHT" mnemonicParsing="false" onAction="#clickCancel" text="CANCEL" GridPane.columnIndex="1" GridPane.rowIndex="10">
+         <GridPane.margin>
+            <Insets left="100.0" />
+         </GridPane.margin>
+      </Button>
+      <Label fx:id="label1" textFill="#eb0707" GridPane.columnIndex="2">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label2" textFill="#dd0a0a" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label3" textFill="#dd0404" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label4" textFill="#f80505" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label5" textFill="#f50707" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label6" textFill="#f20909" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label8" textFill="#e80404" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+      <Label fx:id="label7" textFill="#f20303" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <GridPane.margin>
+            <Insets top="50.0" />
+         </GridPane.margin>
+      </Label>
+   </children>
+</GridPane>

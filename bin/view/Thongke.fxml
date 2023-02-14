@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerThongke">
+   <children>
+      <LineChart fx:id="lineChart" layoutX="56.0" layoutY="60.0" prefHeight="606.0" prefWidth="974.0" title="Thống kê doanh thu 10 ngày gần nhất">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#clickBack" text="back" />
+   </children>
+</Pane>

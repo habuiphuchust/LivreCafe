@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerV0">
+   <children>
+      <Button fx:id="button1" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="305.0" layoutY="186.0" mnemonicParsing="false" onAction="#clickButton1" prefHeight="95.0" prefWidth="170.0" text="Kho sách">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="button2" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="605.0" layoutY="186.0" mnemonicParsing="false" onAction="#clickButton2" prefHeight="95.0" prefWidth="170.0" text="Tìm kiếm">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="button3" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="305.0" layoutY="384.0" mnemonicParsing="false" onAction="#clickDonhang" prefHeight="95.0" prefWidth="170.0" text="Đơn hàng">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="button0" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Back" />
+      <Button fx:id="button4" alignment="BOTTOM_CENTER" contentDisplay="TOP" layoutX="605.0" layoutY="384.0" mnemonicParsing="false" onAction="#clickThongke" prefHeight="95.0" prefWidth="170.0" text="Thống kê">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Button>
+   </children>
+</Pane>

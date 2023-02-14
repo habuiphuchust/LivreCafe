@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerDonhang">
+   <children>
+      <TableView fx:id="tableview" layoutX="41.0" layoutY="149.0" onMouseClicked="#clickTable" prefHeight="464.0" prefWidth="1019.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="47.0" text="ID" />
+          <TableColumn fx:id="idmathang" minWidth="0.0" prefWidth="79.0" text="Mã hàng" />
+            <TableColumn fx:id="soluong" prefWidth="82.0" text="Số lượng" />
+            <TableColumn fx:id="tenkh" prefWidth="127.0" text="Tên khách hàng" />
+            <TableColumn fx:id="diachi" prefWidth="130.0" text="Địa chỉ" />
+            <TableColumn fx:id="sodienthoai" prefWidth="113.0" text="Số điện thoại" />
+            <TableColumn fx:id="email" prefWidth="167.0" text="email" />
+            <TableColumn fx:id="tentaikhoan" prefWidth="104.0" text="Tên tài khoản" />
+            <TableColumn fx:id="date" prefWidth="107.0" text="Ngày mua" />
+            <TableColumn fx:id="trangthai" prefWidth="53.0" text="Xử lý" />
+        </columns>
+      </TableView>
+      <Button layoutX="358.0" layoutY="634.0" mnemonicParsing="false" onAction="#clickXuly" text="Xử lý" fx:id="xuly" />
+      <Button layoutX="625.0" layoutY="634.0" mnemonicParsing="false" onAction="#clickXoa" text="Xóa" fx:id="xoa" />
+      <TextField fx:id="textField" layoutX="41.0" layoutY="118.0" />
+      <Button layoutX="21.0" layoutY="22.0" mnemonicParsing="false" onAction="#clickBack" text="back" />
+   </children>
+</Pane>
